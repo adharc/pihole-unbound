@@ -101,7 +101,11 @@ Exit & Save the config file by pressing `Ctrl+X`, then `Y` and `Enter`
 
 
 ### Check unbound config file for errors
-Check the config file for errors by `unbound-checkconf  /etc/unbound/unbound.conf.d/pi-hole.conf` it should return `no errors in /etc/unbound/unbound.conf.d/pi-hole.conf`. 
+Check the config file for errors by:
+```
+unbound-checkconf  /etc/unbound/unbound.conf.d/pi-hole.conf 
+```
+This should return `no errors in /etc/unbound/unbound.conf.d/pi-hole.conf`.
 
 Start unbound service and check whether the domain is resolving. The first query will be slow but the subsequent queries will resolve under 1ms.
 ```
