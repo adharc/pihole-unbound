@@ -71,6 +71,7 @@ server:
 
     # Ensure kernel buffer is large enough to not lose messages in traffic spikes
     so-rcvbuf: 1m
+    so-sndbuf: 1m
 
     # Ensure privacy of local IP ranges
     private-address: 192.168.0.0/16
